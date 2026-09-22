@@ -1,0 +1,26 @@
+{
+  "name": "backnodejs",
+  "version": "1.0.0",
+  "description": "Prova :(",
+  "homepage": "https://github.com/nathimartins590-sys/BackNodeJS#readme",
+  "bugs": {
+    "url": "https://github.com/nathimartins590-sys/BackNodeJS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathimartins590-sys/BackNodeJS.git"
+  },
+  "license": "ISC",
+  "author": "Nathalia",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.24.4",
+    "sequelize": "^6.37.8"
+  }
+}
