@@ -23,28 +23,22 @@ class ServiceAge {
         if (!dia || !mes || !ano || !hora) {
             throw new Error({ message: "colocar todas as informações" })
         }
-        const agendas = await RepositoryAge.Creat(mes, ano)
+        const agendas = await RepositoryAge.Creat(dia, mes, ano, hora)
         return agendas
     }
 
-    async Alterar(id) {
-        // if (!id || !marca || !ano) {
-        //     throw new Error("Favor informar os dados");
-        // }
+    async Alterar(dia, mes, ano, hora) {
+        if (!dia || !mes || !ano || !hora) {
+            throw new Error("Favor informar os dados");
+        }
 
-        // const index = RepositoryCarro.findIndex(carro => carro.id === Number(id));
+        const index = RepositoryAge.findIndex(carro => carro.dia === Number(dia));
 
-        // if (index) {
-        //     throw new Error("Carro não encontrado");
-        // }
+        if (index) {
+            throw new Error("Agenda não encontrada");
+        }
 
-        // RepositoryCarro[index] = {
-        //     id: Number(id),
-        //     marca,
-        //     ano
-        // };
-
-        return RepositoryAge.Update(id)
+        return RepositoryAge.Update(dia)
     }
 
     async Deletar(id) {

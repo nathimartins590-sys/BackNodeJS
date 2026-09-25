@@ -40,12 +40,11 @@ class ControllerAge {
         }
     }
 
-
     async Alterar(req, res) {
         try {
             const { dia, mes, ano, hora } = req.body
 
-            await ServiceAge.Update( dia, mes, ano, hora )
+            await ServiceAge.Update( dia, mes, ano, hora );
             
             res.status(201).send({ mensagem: "Cadastrado com sucesso" })
         } catch (error) {

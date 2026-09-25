@@ -14,6 +14,9 @@ class Agendas {
             mes: {
                type: database.db.Sequelize.INTEGER,
             },
+            ano: {
+               type: database.db.Sequelize.INTEGER,
+            },
             hora: {
                 type: database.db.Sequelize.INTEGER,
             }
