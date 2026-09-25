@@ -3,7 +3,6 @@ import router from './router/agenda.js';
 import database from './config/database.js';
 import usuario from './router/usuario.js'
 
-
 const app = express()
 
 app.use(express.json())

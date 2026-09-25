@@ -4,7 +4,7 @@ import authMiddleware from "../middleware/auth.js"
 
 const router = express.Router()
 
-router.post("/login" ,authMiddleware, ControllerUsuario.Login)
+router.post("/login" , ControllerUsuario.Login)
 router.get("/buscar",authMiddleware, ControllerUsuario.Buscar)
 router.get("/detalhes/:id", ControllerUsuario.Detalhe)
 router.post("/criar", ControllerUsuario.Criar)

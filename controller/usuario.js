@@ -64,8 +64,6 @@ class ControllerUsuario {
 
     }
 
-
-
   async  Deletar(req, res) {
         try {
 
